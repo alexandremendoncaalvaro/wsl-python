@@ -4,7 +4,7 @@ Este processo é pensado em desenvolvedores que tem interesse de utilizar os rec
 ![VS Code Remote WSL](https://code.visualstudio.com/assets/docs/remote/wsl/architecture-wsl.png)  
 
 Além de ficar com um terminal bonitão e com recursos de auto-completar, este processo também instala ambientes virtuais para Python, permitindo alterar versões facilmente, conforme a necessidade dos projetos, sem ter conflitos. Para isto é utilizado o [pyenv](https://github.com/pyenv/pyenv).  
-Também é instalado o [Poetry](https://python-poetry.org/docs/basic-usage/) para gerenciar bibliotecas PIP de forma similar ao que o Node faz.  
+Também é instalado o [poetry](https://python-poetry.org/docs/basic-usage/) para gerenciar bibliotecas PIP de forma similar ao que o Node faz.  
 
 Para conhecer comandos básicos vá para as sessões [pyenv](#pyenv) e [poetry](#poetry) respectivamente.  
 
