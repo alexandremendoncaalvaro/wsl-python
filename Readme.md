@@ -3,8 +3,10 @@
 Este processo é pensado em desenvolvedores que tem interesse de utilizar os recursos do Linux no Windows para explorar o melhor dos dois mundos. No final você poderá programar no Linux pelo VS Code do Windows de forma transparente, leve e super funcional.  
 ![VS Code Remote WSL](https://code.visualstudio.com/assets/docs/remote/wsl/architecture-wsl.png)  
 
-Além de ficar com um terminal bonitão e com recursos de auto-completar, este processo também instala ambientes virtuais para Python, permitindo alterar versões facilmente, conforme a necessidade dos projetos, sem ter conflitos. Para isto é utilizado o [pyenv](https://github.com/pyenv/pyenv). Clique no link para conhecer mais mais plugins além do Node, Yarn e Python. Para conhecer comandos básicos vá para a sessão [pyenv](#pyenv).  
+Além de ficar com um terminal bonitão e com recursos de auto-completar, este processo também instala ambientes virtuais para Python, permitindo alterar versões facilmente, conforme a necessidade dos projetos, sem ter conflitos. Para isto é utilizado o [pyenv](https://github.com/pyenv/pyenv).  
 Também é instalado o [Poetry](https://python-poetry.org/docs/basic-usage/) para gerenciar bibliotecas PIP de forma similar ao que o Node faz.  
+
+Para conhecer comandos básicos vá para as sessões [pyenv](#pyenv) e [poetry](#poetry) respectivamente.  
 
 ## Prerequisitos
 ![Windows 10](https://flat.badgen.net/badge/icon/windows10?icon=windows&label)  
@@ -121,7 +123,7 @@ pyenv global 3.10.14
 https://github.com/pyenv/pyenv#usage
 
 
-# Poetry
+# poetry
 ### Guia Rápido
 https://www.youtube.com/embed/BXlhJO3p3s4
 
