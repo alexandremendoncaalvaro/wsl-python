@@ -1,16 +1,16 @@
-# WSL2 Ubuntu para Python e Node
+# WSL2 Ubuntu para Python
 
 Este processo é pensado em desenvolvedores que tem interesse de utilizar os recursos do Linux no Windows para explorar o melhor dos dois mundos. No final você poderá programar no Linux pelo VS Code do Windows de forma transparente, leve e super funcional.  
 ![VS Code Remote WSL](https://code.visualstudio.com/assets/docs/remote/wsl/architecture-wsl.png)  
 
-Além de ficar com um terminal bonitão e com recursos de auto-completar, este processo também instala ambientes virtuais para Node, Yarn e Python, permitindo alterar versões facilmente, conforme a necessidade dos projetos, sem ter conflitos. Para isto é utilizado o [ASDF](https://asdf-vm.com/guide/getting-started.html#_4-install-a-plugin). Clique no link para conhecer mais mais plugins além do Node, Yarn e Python. Para conhecer comandos básicos vá para a sessão [ASDF](#asdf).  
-No caso do Python também é instalado o [Poetry](https://python-poetry.org/docs/basic-usage/) para gerenciar bibliotecas PIP de forma similar ao que o Node faz.  
+Além de ficar com um terminal bonitão e com recursos de auto-completar, este processo também instala ambientes virtuais para Python, permitindo alterar versões facilmente, conforme a necessidade dos projetos, sem ter conflitos. Para isto é utilizado o [pyenv](https://github.com/pyenv/pyenv). Clique no link para conhecer mais mais plugins além do Node, Yarn e Python. Para conhecer comandos básicos vá para a sessão [pyenv](#pyenv).  
+Também é instalado o [Poetry](https://python-poetry.org/docs/basic-usage/) para gerenciar bibliotecas PIP de forma similar ao que o Node faz.  
 
 ## Prerequisitos
 ![Windows 10](https://flat.badgen.net/badge/icon/windows10?icon=windows&label)  
 Você deve estar executando o Windows 10 versão 2004 e superior (Build 19041 e superior) ou o Windows 11.
 
-## Instalação do WSL2 Ubuntu
+# Instalação do WSL2 Ubuntu
 ![WSL2 Ubuntu](https://flat.badgen.net/badge/WSL2/Ubuntu/orange)  
 
 Abra o Powershell em modo administrador e insira o comando:  
@@ -21,7 +21,30 @@ wsl --install
 Após finalizar, abra WSL pesquisando no menu iniciar.  
 Conclua a instalação criando um usuário e senha. Após isso feche a janela do WSL.  
 
-## Windows Terminal
+# Bash simplão ou Terminal Windows + Plugins?
+Você pode seguir de duas formas agora em relação ao terminal.  
+
+- [Bash Simplão](#bash-simpl-o): Instala o básico* pra funcionar no Bash.
+- [Windows Terminal + ZSH](#windows-terminal-zsh): Instala o básico* pra funcionar no ZSH + o ZSH com plugins de autocomplete e aparência bonitona e informativa de terminal.  
+Exemplo de aparência (tem vários temas):  
+<img src="https://blog.rocketseat.com.br/content/images/2019/05/Screen-Shot-2019-05-02-at-10.08.19.png" alt="Powerlevel10k" width="600"/>  
+
+> *básico: Integração vscode, pyenv e poetry
+
+# Bash Simplão
+Siga estas etapas para instalar o básico pra funcionar o pyenv e poetry no Bash.
+
+Execute o comando de terminal a seguir no WSL.  
+```Bash
+/bin/bash -c "$(curl -fsSL https://gist.githubusercontent.com/alexandremendoncaalvaro/2b9a6cc9a3a5b1ee2b0980502efc50ad/raw/d6477b250115ab9603e3b17dd8fcd399f88ff110/config-ubuntu-py-bash.sh)"
+```
+> *Use a senha criada para o Ubuntu caso necessário.  
+**Os comandos a seguir foram criados por mim e estão no meu gist. Para verificar cada linha do que é executado, acesse: https://gist.githubusercontent.com/alexandremendoncaalvaro
+
+Pronto!
+Basta configurar o [VSCode](#vscode) e está pronto para usar os recursos do pyenv e poetry.
+
+# Windows Terminal + ZSH
 - Baixe e instale essas 4 fontes no Windows para os recursos do Ubuntu aparecerem corretamente:  
     - [MesloLGS NF Regular.ttf](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf)  
     - [MesloLGS NF Bold.ttf](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf)  
@@ -37,26 +60,28 @@ Conclua a instalação criando um usuário e senha. Após isso feche a janela do
 
 ## Configuração Básica do Ubuntu
 Execute o comando a seguir no Windows Terminal.  
-*Use a senha criada para o Ubuntu caso necessário.  
-**Os comandos a seguir foram criados por mim e estão no meu gist. Para verificar cada linha do que é executado, acesse: https://gist.githubusercontent.com/alexandremendoncaalvaro
-
 ```Bash
 /bin/bash -c "$(curl -fsSL https://gist.githubusercontent.com/alexandremendoncaalvaro/b468a2e7410403b2506608ff12325ece/raw/5bcaae34f93643bc0359141d927810f747f44b6e/config-ubuntu-py-pt1.sh)"
 ```
+> *Use a senha criada para o Ubuntu caso necessário.  
+**Os comandos a seguir foram criados por mim e estão no meu gist. Para verificar cada linha do que é executado, acesse: https://gist.githubusercontent.com/alexandremendoncaalvaro
+
 Feche o terminal e abra novamente.  
-*Nessa etapa a aparencia do terminal é configurada através de um Wizzard com vários passos. Deixe conforme suas preferências.  
-<img src="https://raw.githubusercontent.com/romkatv/powerlevel10k-media/master/configuration-wizard.gif" alt="Powerlevel10k" width="400"/>  
+
+Nessa etapa a aparencia do terminal é configurada através de um Wizzard com vários passos. Deixe conforme suas preferências.  
+<img src="https://raw.githubusercontent.com/romkatv/powerlevel10k-media/master/configuration-wizard.gif" alt="Powerlevel10k" width="600"/>  
 
 
 Execute o próximo comando:  
-*Use a senha criada para o Ubuntu caso necessário.  
 ```Bash
 /bin/bash -c "$(curl -fsSL https://gist.githubusercontent.com/alexandremendoncaalvaro/6eb05914ed4183718a72edcbfd41c053/raw/b81ae70f1a8e305e702a7f8b6b86c948ce5e240e/config-ubuntu-py-pt2.sh)"
 ```
+> *Use a senha criada para o Ubuntu caso necessário.  
 
-## VSCode
+# VSCode
 Instale as extensão **Visual Studio Code Remote - WSL** no VS Code.  
-Nas configurações do VS Code inclua a linha a seguir para alterar a fonte do terminal integrado:  
+
+Se optou pela versão com temas, lembre de ir nas configurações do VS Code e incluir a linha a seguir para alterar a fonte do terminal integrado:  
 ```Bash
 "terminal.integrated.fontFamily": "MesloLGS NF",
 ```
@@ -68,26 +93,35 @@ code .
 
 O VS Code do seu Windows vai abrir acessando seu projeto remotamente (via SSH) no WLS. Parece mágica e funciona incrivelmente bem!
 
-## ASDF
+# pyenv
 
-Alguns exemplos de uso do ASDF  
+Alguns exemplos de uso do pyenv  
 
-Instalar a ultima versão do node:  
+Listar as versões do python que já temos instalada no sistema:  
 ```Bash
-asdf install nodejs latest
+pyenv versions
 ```
 
-Selecionar a ultima versão do node como global para todos os projetos:  
+Listar as versões do python disponíveis para instalação:  
 ```Bash
-asdf global nodejs latest
+pyenv install -l
 ```
 
-Listar todas as versões de plugins instalados:  
+Instalar a versão do python escolhida:  
 ```Bash
-asdf list
+pyenv install 3.10.14
 ```
 
-## Poetry
+Selecionar a versão do python que instalamos como global para todos os projetos:  
+```Bash
+pyenv global 3.10.14
+```
+
+### Mais informações e comandos
+https://github.com/pyenv/pyenv#usage
+
+
+# Poetry
 ### Guia Rápido
 https://www.youtube.com/embed/BXlhJO3p3s4
 
