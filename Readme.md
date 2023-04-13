@@ -1,12 +1,16 @@
 # WSL2 Ubuntu para Python
 
-Este processo é pensado em desenvolvedores que tem interesse de utilizar os recursos do Linux no Windows para explorar o melhor dos dois mundos. No final você poderá programar no Linux pelo VS Code do Windows de forma transparente, leve e super funcional.  
-![VS Code Remote WSL](https://code.visualstudio.com/assets/docs/remote/wsl/architecture-wsl.png)  
+Este processo é pensado em desenvolvedores que tem interesse de utilizar os recursos do Linux no Windows para explorar o melhor dos dois mundos. No final você poderá programar no WSL2 (Linux) remotamente pelo VS Code do Windows de forma transparente, leve e super funcional.  
 
-Além de ficar com um terminal bonitão e com recursos de auto-completar, este processo também instala ambientes virtuais para Python, permitindo alterar versões facilmente, conforme a necessidade dos projetos, sem ter conflitos. Para isto é utilizado o [pyenv](https://github.com/pyenv/pyenv).  
+<img src="https://code.visualstudio.com/assets/docs/remote/wsl-tutorial/remote-wsl-extension.png" alt="WSL Extension" width="600"/>  
+
+
+Este processo também instala ambientes virtuais para Python, permitindo alterar versões facilmente, conforme a necessidade dos projetos, sem ter conflitos. Para isto é utilizado o [pyenv](https://github.com/pyenv/pyenv).  
 Também é instalado o [poetry](https://python-poetry.org/docs/basic-usage/) para gerenciar bibliotecas PIP de forma similar ao que o Node faz.  
 
 Para conhecer comandos básicos vá para as sessões [pyenv](#pyenv) e [poetry](#poetry) respectivamente.  
+
+Opcionalmente você também pode ficar com um terminal bonitão e com recursos de auto-completar. Veja em [Windows Terminal + ZSH](#windows-terminal-zsh).
 
 ## Prerequisitos
 ![Windows 10](https://flat.badgen.net/badge/icon/windows10?icon=windows&label)  
@@ -34,7 +38,7 @@ Exemplo de aparência (tem vários temas):
 > *básico: Integração vscode, pyenv e poetry
 
 # Bash Simplão
-Siga estas etapas para instalar o básico pra funcionar o pyenv e poetry no Bash.
+Siga as etapas a seguir para instalar apenas o básico pra funcionar o pyenv e poetry no Bash.  
 
 Execute o comando de terminal a seguir no WSL.  
 ```Bash
@@ -47,6 +51,8 @@ Pronto!
 Basta configurar o [VSCode](#vscode) e está pronto para usar os recursos do pyenv e poetry.
 
 # Windows Terminal + ZSH
+Exemplo de aparência (tem vários temas):  
+<img src="https://blog.rocketseat.com.br/content/images/2019/05/Screen-Shot-2019-05-02-at-10.08.19.png" alt="Powerlevel10k" width="600"/>  
 - Baixe e instale essas 4 fontes no Windows para os recursos do Ubuntu aparecerem corretamente:  
     - [MesloLGS NF Regular.ttf](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf)  
     - [MesloLGS NF Bold.ttf](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf)  
@@ -94,6 +100,9 @@ code .
 ```
 
 O VS Code do seu Windows vai abrir acessando seu projeto remotamente (via SSH) no WLS. Parece mágica e funciona incrivelmente bem!
+
+<img src="https://code.visualstudio.com/assets/docs/remote/wsl/architecture-wsl.png" alt="VS Code Remote WSL" width="600"/>  
+
 
 # pyenv
 
