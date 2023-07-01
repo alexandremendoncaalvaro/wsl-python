@@ -42,7 +42,7 @@ Siga as etapas a seguir para instalar apenas o básico pra funcionar o pyenv e p
 
 Execute o comando de terminal a seguir no WSL.  
 ```Bash
-/bin/bash -c "$(curl -fsSL https://gist.githubusercontent.com/alexandremendoncaalvaro/2b9a6cc9a3a5b1ee2b0980502efc50ad/raw/d6477b250115ab9603e3b17dd8fcd399f88ff110/config-ubuntu-py-bash.sh)"
+/bin/bash -c "$(curl -fsSL https://gist.githubusercontent.com/alexandremendoncaalvaro/2b9a6cc9a3a5b1ee2b0980502efc50ad/raw/729b5bd19c6eaff19aac20f773e1eefb5b5b841c/config-ubuntu-py-bash.sh)"
 ```
 > *Use a senha criada para o Ubuntu caso necessário.  
 **Os comandos a seguir foram criados por mim e estão no meu gist. Para verificar cada linha do que é executado, acesse: https://gist.githubusercontent.com/alexandremendoncaalvaro
