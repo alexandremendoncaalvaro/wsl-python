@@ -82,7 +82,7 @@ Nessa etapa a aparencia do terminal é configurada através de um Wizzard com v�
 
 Execute o próximo comando:  
 ```Bash
-/bin/bash -c "$(curl -fsSL https://gist.githubusercontent.com/alexandremendoncaalvaro/6eb05914ed4183718a72edcbfd41c053/raw/b81ae70f1a8e305e702a7f8b6b86c948ce5e240e/config-ubuntu-py-pt2.sh)"
+/bin/bash -c "$(curl -fsSL https://gist.githubusercontent.com/alexandremendoncaalvaro/6eb05914ed4183718a72edcbfd41c053/raw/47754b0fb883810ea3660a520262309990ad1a17/config-ubuntu-py-pt2.sh)"
 ```
 > *Use a senha criada para o Ubuntu caso necessário.  
 
