@@ -69,7 +69,7 @@ Exemplo de aparência (tem vários temas):
 ## Configuração Básica do Ubuntu
 Execute o comando a seguir no Windows Terminal.  
 ```Bash
-/bin/bash -c "$(curl -fsSL https://gist.githubusercontent.com/alexandremendoncaalvaro/b468a2e7410403b2506608ff12325ece/raw/5bcaae34f93643bc0359141d927810f747f44b6e/config-ubuntu-py-pt1.sh)"
+/bin/bash -c "$(curl -fsSL https://gist.githubusercontent.com/alexandremendoncaalvaro/b468a2e7410403b2506608ff12325ece/raw/5059c662b880cd0777f4bd42f69c34c00ec068bc/config-ubuntu-py-pt1.sh)"
 ```
 > *Use a senha criada para o Ubuntu caso necessário.  
 **Os comandos a seguir foram criados por mim e estão no meu gist. Para verificar cada linha do que é executado, acesse: https://gist.githubusercontent.com/alexandremendoncaalvaro
